@@ -40,7 +40,7 @@ http {
         server_name  localhost;
 
         is_bot_by    "$arg_bot";
-        is_bot_data  is_bot_data;
+        is_bot_data  %%TESTDIR%%/is_bot_data;
 
         if ($is_bot) {
             return 402;
